@@ -28,7 +28,7 @@ services:
       - "5003:5003"
     deploy:
         replicas: 1
-app_service:
+  app_service:
     image: 6362437164/myname:appimage
     ports:
       - "5000:5000"
@@ -38,5 +38,6 @@ app_service:
       - auth_service
       - book_service
       - borrow_service
+
 
 
