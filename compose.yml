@@ -6,8 +6,6 @@ services:
      - "3306:3306"
     deploy:
       replicas: 1
-    volumes:
-     - db_data:/var/lib/mysql 
   auth_service:
      image: 6362437164/myname:authimage
      ports:
@@ -38,6 +36,7 @@ services:
       - auth_service
       - book_service
       - borrow_service
+
 
 
 
