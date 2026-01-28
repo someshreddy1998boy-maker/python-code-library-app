@@ -3,7 +3,7 @@ services:
   db:
     image: 6362437164/myname:dbimage
     ports:
-     - "33306:3306"
+     - "3306:3306"
     deploy:
       replicas: 1
     volumes:
