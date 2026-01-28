@@ -38,3 +38,4 @@ app_image:
       - auth_service
       - book_service
       - borrow_service
+
